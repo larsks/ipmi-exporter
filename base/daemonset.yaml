@@ -6,7 +6,7 @@ spec:
   template:
     metadata:
       annotations:
-        kubectl.kubernetes.io/default-container: node-exporter
+        kubectl.kubernetes.io/default-container: ipmi-exporter
     spec:
       serviceAccountName: ipmi-exporter
       volumes:
