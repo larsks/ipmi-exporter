@@ -6,6 +6,6 @@ resources:
 - prometheus-k8s-rolebinding.yaml
 - prometheus-k8s-role.yaml
 - ipmi-metrics-reader-clusterrole.yaml
-- ipmi-metrics-reader-rolebinding.yaml
+- ipmi-metrics-reader-clusterrolebinding.yaml
 - ipmi-exporter-allow-privileged-rolebinding.yaml
 - ipmi-exporter-allow-privileged-role.yaml

@@ -1,5 +1,5 @@
 apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
+kind: ClusterRoleBinding
 metadata:
   name: ipmi-metrics-reader
 roleRef:
@@ -8,5 +8,5 @@ roleRef:
   name: ipmi-metrics-reader
 subjects:
 - kind: ServiceAccount
-  name: prometheus-k8s
-  namespace: openshift-monitoring
+  name: ipmi-exporter
+  namespace: ipmi-exporter
