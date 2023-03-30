@@ -1,0 +1,12 @@
+name: Validate Kubernetes manifests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-manifests:
+    uses: larsks/nerc-ocp-workflows/.github/workflows/validate-manifests.yaml@feature/common-ci-scripts
+    with:
+      common_ci_repository: larsks/nerc-ocp-workflows
+      common_ci_ref: feature/common-ci-scripts
